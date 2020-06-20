@@ -1,47 +1,137 @@
 Git - Hackerhank
 
-O que È repositÛrio de cÛdigo fonte?
+O que ÔøΩ repositÔøΩrio de cÔøΩdigo fonte?
 
 Sistema voltado para trabalho em equipe que visa resolver o problema de trabalho em arquivos compartilhados.
 
-Podemos imaginar uma equipe de duas pessoas alterando o mesmo arquivo. O ˙ltimo que salvar, substituir· o primeiro que foi salvo, sem se quer avisar. Trabalhando com repositÛrio, o sistema avisa quando houver esse tipo conflito alÈm de oferecer recursos para que possamos tratar esses tipos de erros sem perder qualquer informaÁ„o.
+Podemos imaginar uma equipe de duas pessoas alterando o mesmo arquivo. O ÔøΩltimo que salvar, substituirÔøΩ o primeiro que foi salvo, sem se quer avisar. Trabalhando com repositÔøΩrio, o sistema avisa quando houver esse tipo conflito alÔøΩm de oferecer recursos para que possamos tratar esses tipos de erros sem perder qualquer informaÔøΩÔøΩo.
 
-O que È o Git?
+O que ÔøΩ o Git?
 
-… um sistema de controle de vers„o. 
-Com o git instalado o computador passa a funcionar como se fosse um servidor individual para gerenciamento dos arquivos, tambÈm, de forma individual.
+ÔøΩ um sistema de controle de versÔøΩo. 
+Com o git instalado o computador passa a funcionar como se fosse um servidor individual para gerenciamento dos arquivos, tambÔøΩm, de forma individual.
 
 
 Github
 
-Funciona como outro servidor em domÌnio geral, onde funciona online.
+Funciona como outro servidor em domÔøΩnio geral, onde funciona online.
 
-Imagina que cada computador com o git instalado; um projeto onde trÍs pessoas ir„o trabalhar nele; Agora, cada um ter· seu papel atribuÌdo dentro do projeto; Cada qual comeÁa a desenvolver suas atividades de forma especÌfica.
+Imagina que cada computador com o git instalado; um projeto onde trÔøΩs pessoas irÔøΩo trabalhar nele; Agora, cada um terÔøΩ seu papel atribuÔøΩdo dentro do projeto; Cada qual comeÔøΩa a desenvolver suas atividades de forma especÔøΩfica.
 
-Com isso em mente, teremos que centralizar todas essas alteraÁıes forma a manter o projeto atualizado com todas as alteraÁıes em um sÛ lugar.
+Com isso em mente, teremos que centralizar todas essas alteraÔøΩÔøΩes forma a manter o projeto atualizado com todas as alteraÔøΩÔøΩes em um sÔøΩ lugar.
 
-… aÌ que entra o gerenciador externo de repositÛrios, o Github.
+ÔøΩ aÔøΩ que entra o gerenciador externo de repositÔøΩrios, o Github.
 
 
-1. Criando um respositÛrio de projeto no github
+1. Criando um respositÔøΩrio de projeto no github
 - github.com
 - criar ou logar com uma conta
-- criar um respositÛrio (nome, descriÁ„o e inicar com readme)
-- Copiar o HTTPS com o endereÁo do projeto. (para clonar)
-- No nosso computador, com o git instalado, abrir uma pasta onde ser„o colocados todos os projetos
-- Execute o cmd
+- criar um respositÔøΩrio (nome, descriÔøΩÔøΩo e inicar com readme)
+- Copiar o HTTPS com o endereÔøΩo do projeto. (para clonar)
+- No nosso computador, com o git instalado, criar ou abrir uma pasta onde serÔøΩo colocados todos os projetos
+- Clicar com o botÔøΩo direito e clicar em Git Bash Here 
 
 2. Comandos:
 
 - GIT CLONE
-Na linha de comando, digite: git clone e cole o endereÁo do projeto do github:
+Na linha de comando, digite: git clone e cole o endereÔøΩo do projeto do github:
 	git clone https://github.com/emersonps/teste_comandos.git
 
 no final, veremos uma pasta do projeto do github no nosso local.
 
-3. Enviando arquivos e alteraÁıes para o github
+3. Criando arquivos e alterando dentro do projeto local
 - Cria um arquido de texto dentro da pasta do projeto que copiamos.
-- Com isso, temos em nosso local, a cÛpia do projeto que est· no gihub e agora uma alteraÁ„o onde adicionamos um arquivo nesse projeto. Por hora, essa alteraÁ„o est· apenas dentro da cÛpia do projeto em nosso computador.
-- Precisamos enviar essa alteraÁ„o para o projeto com um todo. 
+- Com isso, temos em nosso local, a cÔøΩpia do projeto que estÔøΩ do gihub e agora uma alteraÔøΩÔøΩo, onde adicionamos um arquivo nesse projeto. Por hora, essa alteraÔøΩÔøΩo estÔøΩ apenas dentro da cÔøΩpia do projeto em nosso computador.
 
-3.1 - 
+3.1 - GIT STATUS
+- Na linha de comandos (git bash) digite git status
+- Os novos arquivos ou arquivos alterados, serÔøΩo exibidos em destaque (vermelho), indicando que hÔøΩ alteraÔøΩÔøΩes que precisam ser enviadas para o projeto remoto. 
+
+3.2 - GIT ADD * [OU NOME DO ARQUIVO ESPECÔøΩFICO]
+- Com o comando 'git add' seguido de asterisco (* - tudo), estamos adicionado todos os arquivos alterados e novos, para serem submetidos ao projeto remoto.
+- Novamente damos GIT STATUS, e veremos que a cor do(s) arquivo(s) muda de cor (verde), indicando que os mesmos foram adicionados (agora os arquivos estÔøΩo tracked - monitorados), ou seja, podemos enviÔøΩ-los para o projeto remoto. Sempre devemos adicionar os arquivos antes de enviar para o remote.
+- EntÔøΩo digite: GIT ADD
+- Depois digite: GIT STATUS
+
+3.3 - GIT COMMIT [mensagem]
+- O Commit ÔøΩ o comando que permite adicionar um texto descrevendo o que fora feito nos arquivos. Uma breve descriÔøΩÔøΩo ÔøΩ o suficiente.
+- EntÔøΩo digite: GIT COMMIT -m "texto descreve as alteraÔøΩÔøΩes que eu fiz nos arquivos" 
+- Uma mensagem indicando o mode 10064 (nÔøΩmero do commit)
+- Indicando quantos arquivos foram modificados e quantas inserÔøΩÔøΩes foram feitas nesse arquivo.
+- Nesse momento, suas alteraÔøΩÔøΩes atÔøΩ esse commit, ficam salvas localmente, ou seja, elas ainda nÔøΩo surtirÔøΩo efeito no projeto atual.
+- EntÔøΩo digite: GIT STAUS 
+- Veja que agora nÔøΩo tem nada na listagem.
+- Mas tudo ainda estÔøΩ localmente.
+
+3.4 - GIT PUSH (falso cognato com o nosso portuguÔøΩs - empurrar)
+- Com esse comando, "empurrado", ou seja, enviamos aqueles arquivos adicionados e commitados para o servidor remoto.
+- EntÔøΩo digite: GIT PUSH 
+- Note que no final ele lista algumas informaÔøΩÔøΩes, mas note principalmente a ÔøΩltima linha (master->master)
+- No github, dÔøΩ um refresh na pÔøΩgina (F5), o arquivo e as alteraÔøΩÔøΩes poderÔøΩo ser vistas.
+
+- Master: ÔøΩ o branch (ramo) no projeto remoto, entÔøΩo a representaÔøΩÔøΩo ficaria assim:
+
+computador (local)
+  |
+  |_nome do projeto
+	|
+	|_master
+	    |
+	    |_arquivos_do_projeto (alterado)
+	    |
+	    |_arquivos_do_projeto (novo)
+
+
+github (remote)
+  |
+  |_nome do projeto
+	|
+	|_master
+	    |
+	    |_arquivos_do_projeto (alterado)
+	    |
+	    |_arquivos_do_projeto (novo)
+
+
+Obs: Ao dar um push, vocÔøΩ precisarÔøΩ estar logado com o nome de usuÔøΩrio e a senha, entÔøΩo, pode ser que o gerenciador peÔøΩa essas informaÔøΩÔøΩes sempre que for subir algo para o branch remoto.
+
+4. CONFIGURAR LOGIN E SENHA (LOCAL)
+Para fixar o nome de usuÔøΩrio e a senha, faÔøΩa o seguinte:
+- Acesse o local: C:\Users\user
+- Abra no notepad o arquivo: .gitconfig:
+[user]
+	name = adicione um nome
+	email = adicione o email cadastrado no github
+	password = adicione a senha da conta no github
+
+5. USANDO O CONSOLE NO VISUAL STUDIO
+- Execute o VS Code Studio
+- Abra a pasta do projeto (File-> Open Folde / Ctrl +(k+o))
+- Clique em terminal, em seguida, clique em Novo terminal ou (Ctrl+Shift+')
+- Use os comandos git no novo terminal
+-Obs.: Fique atendo se vc est√° dentro da pasta do projeto.
+
+6. BRANCH
+- √â como ramifica√ß√µes que seguem desde o MASTER
+- Ent√£o podemos ter v√°rios branchs √† partir do master ou at√© mesmo de outros branchs, para que cada usu√°rio possa ter uma c√≥pia do projeto original e com isso fazer suas atualiza√ß√µes em branchs separados. 
+- Por fim, podemos mergear (fundir/juntar) todos os branchs num s√≥, ou seja, naquele que ser√° o projeto final dispon√≠vel para acesso aos usu√°rios finais.
+
+7. CRIANDO NOVO BRANCH √Ä PARTIR DO MASTER
+- Quando criamos um projeto e o clonamos para a nossa m√°quina local, vimos que podemos adicionar e commitar as altera√ß√µes feitas no projeto local.
+- Quando damos um push, enviamos todas essas altera√ß√µes para o servidor remoto no github, ou seja, para o branch MASTER.
+- Agora imagina o seguinte cen√°rio: um novo mebro entrar√° na equipe. Ent√£o, √© importante que todos as altera√ß√µes precisas estejam atualizadas no branch master, pois √© √† partir dali que ele ir√° fazer seu clone para o seu local.
+
+7.1 GIT CHECKOUT <nome do branch>
+- Para que possamos criar um novo branch, √© preciso ter certeza que estamos no branch de onde queremos fazer nossa c√≥pia.
+- Use os seguintes comandos: GIT CHECKOUT MASTER (para termos certeza que estamos no branch correto):
+Switched to branch 'master' <- branch atual - voc√™ est√° aqui
+M       git e github.txt    <- commits 'M'ergeados
+Your branch is up to date with 'origin/master'. 
+- Agora digite GIT STATUS, para verificar se h√° alguma altera√ß√£o que tenhamos que adicionar, commitar e dar push.
+- Se tiver, execute esses comandos: 
+GIT ADD * 
+GIT COMMIT -M "MENSAGEM"
+GIT PUSH
+
+7.2 GIT CHECKOUT -B <nome do novo branch>
+- 
