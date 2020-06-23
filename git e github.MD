@@ -216,4 +216,21 @@ git merge <nome_do_branch>	- puxa os arquivos do outro branch para o master (pod
 
 10. PULL REQUEST
 - Pull Requeste é um recurso no Github útil para revisão do código em equipe antes de mergear com outros branchs
--  
+- Para exemplificar: Temos um projeto com dois branches: MASTER e DEV
+- Estamos nos branch DEV que já é um branch gerado à partir do MASTER.
+- Toda alteração no projeto está sendo feita no DEV, então, logicamente, o MASTER está desatualizado.
+- Para que o MASTER receba as atualizações do branch DEV, devemos adcionar, commitar e dar push no DEV.
+- Mas imagina que não estamos confiantes nas alterações, então adicionamos mais uma pessoa no projeto para que ela possa fazer questionamentos sobre os códigos alterados, sugerir ou recusar uma determinada alteração, tudo isso antes de mergear o DEV com o MASTER.
+- Agora que o DEV está atualizado (git add *, git commit -m "mensagem", git push), no Github, clique na aba Pull Request, e em seguida, clique em New Pull Request
+- Como estamos no branch DEV, selecione no base:MASTER e no compare:DEV
+- Clique em Criar Pull Request - para abrir a discussão e revisão na comparação.
+- Crie um título e um comentário e clique em Criar Pull Request
+- Clique na aba File Changed - e marque as linhas que deseja questionar e descreva.
+- Clique em Start a Review - para solicitar revisão
+- Ou clique em Comentar - para que seja respondido apenas o questionamento.
+- O outro membro do grupo poderá visualizar os comentário ou questionamentos clicando em Review changes (número de review) e submeter a revisão.
+- Ou responder e clicar em Resolve Conversation
+- Feito todas as solicitações pendentes, clique na aba Conversation
+- Em seguida, clique no botão Merge Pull Request e Confirmar Merge.
+- Pronto, o branch DEV será mergeado com o MASTER
+
