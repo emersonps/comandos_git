@@ -214,4 +214,6 @@ git checkout master 		- note que os arquivos no master mudarão, pois as última
 - Agora queremos pegar os arquivos ou alterações do branch anterior e atualizar no master:
 git merge <nome_do_branch>	- puxa os arquivos do outro branch para o master (podemos ser feito de branch 								  pra branch, ou do master pra branch também).
 
-
+10. PULL REQUEST
+- Pull Requeste é um recurso no Github útil para revisão do código em equipe antes de mergear com outros branchs
+-  
