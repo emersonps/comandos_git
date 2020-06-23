@@ -198,6 +198,20 @@ Tags |	   \      |
  [T2] 
  (Tags)
 
-9. 
+9. MERGE 
 - Uma vez concluídas as alterações no branch, devemos levar essas alterações para o Master.
 - Chamamos esse recurso de merge (fundir/unir)
+- Então, quando concluídas as alterações no branch, devemos adicinonar, commitar e dar um push:
+
+git status  				- visualiza os arquivos que faltam ser adicionados
+git add * 					- adiciona todos os arquivos para serem enviados para o servidor remoto (github)
+git commit -m "mensagem" 	- adiciona a mensagem aos arquivos 
+git push 					- envia as alterações para o servidor (master ou branch) remoto
+git status 					- verifica se há algum arquivo para ser adicionado, commitado ou para dar push.
+
+- Feito isso, devemos mudar para o branch master:
+git checkout master 		- note que os arquivos no master mudarão, pois as últimas alterações estão no 								branch que acabamos de dar push.
+- Agora queremos pegar os arquivos ou alterações do branch anterior e atualizar no master:
+git merge <nome_do_branch>	- puxa os arquivos do outro branch para o master (podemos ser feito de branch 								  pra branch, ou do master pra branch também).
+
+
