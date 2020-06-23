@@ -1,4 +1,4 @@
-###Git - Hackerhank
+Git - Hackerhank
 
 O que � reposit�rio de c�digo fonte?
 
@@ -134,84 +134,4 @@ GIT COMMIT -M "MENSAGEM"
 GIT PUSH
 
 7.2 GIT CHECKOUT -B <nome do novo branch>
-- Como estamos no branch master e com tudo atualizado, agora podemos criar um novo branch à partir dele.
-- GIT CHECKOUT -B novo_branch
-- Agora temos um novo branch idêntico ao master.
-- Faça uma alteração em qualquer arquivo, enquanto estiver nesse novo branch, e salve.
-- Digite:
-GIT STATUS
-GIT ADD
-GIT COMMIT -M "ALTERAÇÃO"
-
-7.4 GIT PUSH --SET-UPSTREAM ORIGIN <NOME_NOVO_BRANCH>: 
-- Para que possamos enviar o nosso branch local para o servidor remoto (github), damos o push da seguinte forma:
-- As seguintes informações serão exibidas:
-remote: This repository moved. Please use the new location:  
-remote:   https://github.com/emersonps/comandos_git.git <- o novo branch será adicionado nesse projeto
-remote:
-remote: Create a pull request for 'coolaborador1' on GitHub by visiting: <- comando será executado criando o novo branch no servidor remoto (projeto no github)
-remote:      https://github.com/emersonps/comandos_git/pull/new/coolaborador1 
-remote:
-To https://github.com/emersonps/teste_comandos.git
- * [new branch]      coolaborador1 -> coolaborador1 <- como o novo branch aparecerá no github
-Branch 'coolaborador1' set up to track remote branch 'coolaborador1' from 'origin'. <- à partir de agora, o novo branch será monitorado/rastreado
-
-- Por fim, podemos conferir no github se o novo branch aparece lá.
-
-Obs.: 
-	- agora podemos commitar e dar pull de coisas em qualquer um dos dois branchs, não esquecendo de manter sempre atualizado antes de mergeá-los.
-	- Depois do GIT PUSH --SET-UPSTREAM ORIGIN <NOME_BRANCH>, para dar push nas novas alterações, basta apenas usar o GIT PUSH estando no branch
-	- Quando estiver em um branch use o GIT PUSH --SET-UPSTREAM ORIGIN <NOME_BRANCH> apenas para empurrar as coisas para outro branch no projeto.
-	- Para o mesmo branch, use apenas GIT PUSH
-
-8. ESTRATÉGIA DE CONTROLE DE VERSÃO
-
--	TRUNK   (Master/Default)
--	[ 1 ]
--	 |  \
--	 |   \
--    |    \
--	 |	  [ 2 ]	
--	 |	    |   (Brancher)
--	 |	  [ 3 ]
--	 |	  /
--	 | 	 / (Merge)
--	 |  /
--	[ 4 ]
--  / | \  \
-- /	 |  \   \ 
--/	 |	 \     \
--[T1]|	  \    [ 5 ]
--Tags|	   \      |
--	 |	    \     |
--	 |	  [ 6 ]   |
--	 |	    |     |
--	 | 		|	  |
--	 |	  [ 7 ]   |
--	 |	  /	    [ 8 ]
--	 |	/         |
--	 |/           |
--    [ 9 ]         |
--    /            |
--	/			[ 10 ] (Descontinued development branch)
--  /
-- [T2] 
--(Tags)
-
-9. MERGE 
-- Uma vez concluídas as alterações no branch, devemos levar essas alterações para o Master.
-- Chamamos esse recurso de merge (fundir/unir)
-- Então, quando concluídas as alterações no branch, devemos adicinonar, commitar e dar um push:
-
-git status  				- visualiza os arquivos que faltam ser adicionados
-git add * 					- adiciona todos os arquivos para serem enviados para o servidor remoto (github)
-git commit -m "mensagem" 	- adiciona a mensagem aos arquivos 
-git push 					- envia as alterações para o servidor (master ou branch) remoto
-git status 					- verifica se há algum arquivo para ser adicionado, commitado ou para dar push.
-
-- Feito isso, devemos mudar para o branch master:
-git checkout master 		- note que os arquivos no master mudarão, pois as últimas alterações estão no 								branch que acabamos de dar push.
-- Agora queremos pegar os arquivos ou alterações do branch anterior e atualizar no master:
-git merge <nome_do_branch>	- puxa os arquivos do outro branch para o master (podemos ser feito de branch 								  pra branch, ou do master pra branch também).
-
-
+- 
