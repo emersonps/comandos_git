@@ -197,3 +197,7 @@ Tags |	   \      |
    /
  [T2] 
  (Tags)
+
+9. 
+- Uma vez concluídas as alterações no branch, devemos levar essas alterações para o Master.
+- Chamamos esse recurso de merge (fundir/unir)
