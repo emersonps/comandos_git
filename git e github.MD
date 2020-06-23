@@ -166,37 +166,37 @@ Obs.:
 
 8. ESTRATÉGIA DE CONTROLE DE VERSÃO
 
-	TRUNK   (Master/Default)
-	[ 1 ]
-	 |  \
-	 |   \
-     |    \
-	 |	  [ 2 ]	
-	 |	    |   (Brancher)
-	 |	  [ 3 ]
-	 |	  /
-	 | 	 / (Merge)
-	 |  /
-	[ 4 ]
-   / | \  \
-  /	 |  \   \ 
- /	 |	 \     \
-[T1] |	  \    [ 5 ]
-Tags |	   \      |
-	 |	    \     |
-	 |	  [ 6 ]   |
-	 |	    |     |
-	 | 		|	  |
-	 |	  [ 7 ]   |
-	 |	  /	    [ 8 ]
-	 |	/         |
-	 |/           |
-    [ 9 ]         |
-     /            |
-	/			[ 10 ] (Descontinued development branch)
-   /
- [T2] 
- (Tags)
+-	TRUNK   (Master/Default)
+-	[ 1 ]
+-	 |  \
+-	 |   \
+-    |    \
+-	 |	  [ 2 ]	
+-	 |	    |   (Brancher)
+-	 |	  [ 3 ]
+-	 |	  /
+-	 | 	 / (Merge)
+-	 |  /
+-	[ 4 ]
+-  / | \  \
+- /	 |  \   \ 
+-/	 |	 \     \
+-[T1]|	  \    [ 5 ]
+-Tags|	   \      |
+-	 |	    \     |
+-	 |	  [ 6 ]   |
+-	 |	    |     |
+-	 | 		|	  |
+-	 |	  [ 7 ]   |
+-	 |	  /	    [ 8 ]
+-	 |	/         |
+-	 |/           |
+-    [ 9 ]         |
+-    /            |
+-	/			[ 10 ] (Descontinued development branch)
+-  /
+- [T2] 
+-(Tags)
 
 9. MERGE 
 - Uma vez concluídas as alterações no branch, devemos levar essas alterações para o Master.
