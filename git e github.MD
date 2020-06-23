@@ -164,5 +164,36 @@ Obs.:
 	- Quando estiver em um branch use o GIT PUSH --SET-UPSTREAM ORIGIN <NOME_BRANCH> apenas para empurrar as coisas para outro branch no projeto.
 	- Para o mesmo branch, use apenas GIT PUSH
 
+8. ESTRATÉGIA DE CONTROLE DE VERSÃO
 
-
+	TRUNK   (Master/Default)
+	[ 1 ]
+	 |  \
+	 |   \
+     |    \
+	 |	  [ 2 ]	
+	 |	    |   (Brancher)
+	 |	  [ 3 ]
+	 |	  /
+	 | 	 / (Merge)
+	 |  /
+	[ 4 ]
+   / | \  \
+  /	 |  \   \ 
+ /	 |	 \     \
+[T1] |	  \    [ 5 ]
+Tags |	   \      |
+	 |	    \     |
+	 |	  [ 6 ]   |
+	 |	    |     |
+	 | 		|	  |
+	 |	  [ 7 ]   |
+	 |	  /	    [ 8 ]
+	 |	/         |
+	 |/           |
+    [ 9 ]         |
+     /            |
+	/			[ 10 ] (Descontinued development branch)
+   /
+ [T2] 
+ (Tags)
