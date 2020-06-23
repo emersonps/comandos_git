@@ -234,3 +234,11 @@ git merge <nome_do_branch>	- puxa os arquivos do outro branch para o master (pod
 - Em seguida, clique no botão Merge Pull Request e Confirmar Merge.
 - Pronto, o branch DEV será mergeado com o MASTER
 
+10.1 ADICIONANDO COOLABORADORES NO PROJETO
+- Após criar um pull request, na aba Conversationm, clique na opção Reviewers (revisores)
+- Seleciona um e pronto.
+- Agora mais de um usuário poderá corrigir e revisar o código antes de fazer o merge.
+
+
+OBS.: Esse recurso é muito parecido com ISSUES, podendo ser fechado e reaberto e depois fazer o merge.
+
