@@ -1,10 +1,10 @@
-###Git - Hackerhank
+﻿###Git - Hackerhank
 
 O que � reposit�rio de c�digo fonte?
 
 Sistema voltado para trabalho em equipe que visa resolver o problema de trabalho em arquivos compartilhados.
 
-Podemos imaginar uma equipe de duas pessoas alterando o mesmo arquivo. O �ltimo que salvar, substituir� o primeiro que foi salvo, sem se quer avisar. Trabalhando com reposit�rio, o sistema avisa quando houver esse tipo conflito al�m de oferecer recursos para que possamos tratar esses tipos de erros sem perder qualquer informa��o.
+Podemos imaginar uma equipe de duas pessoas alterando o mesmo arquivo. O �ltimo que salvar, substituir� o primeiro que foi salvo, sem se quer avisar. Trabalhando com reposit�rio, o sistema avisa quando houver esse tipo conflito al�m de oferzecer recursos para que possamos tratar esses tipos de erros sem perder qualquer informa��o.
 
 O que � o Git?
 
@@ -119,7 +119,8 @@ Para fixar o nome de usu�rio e a senha, fa�a o seguinte:
 7. CRIANDO NOVO BRANCH À PARTIR DO MASTER
 - Quando criamos um projeto e o clonamos para a nossa máquina local, vimos que podemos adicionar e commitar as alterações feitas no projeto local.
 - Quando damos um push, enviamos todas essas alterações para o servidor remoto no github, ou seja, para o branch MASTER.
-- Agora imagina o seguinte cenário: um novo mebro entrará na equipe. Então, é importante que todos as alterações precisas estejam atualizadas no branch master, pois é à partir dali que ele irá fazer seu clone para o seu local.
+- Agora imagina o seguinte cenário: um novo membro entrará na equipe. Então, é importante que todos as alterações precisas estejam atualizadas no branch master, pois é à partir dali que ele irá fazer seu clone para o seu local.
+- Comando: git branch <nome_do_branch>
 
 7.1 GIT CHECKOUT <nome do branch>
 - Para que possamos criar um novo branch, é preciso ter certeza que estamos no branch de onde queremos fazer nossa cópia.
@@ -162,7 +163,7 @@ Obs.:
 	- agora podemos commitar e dar pull de coisas em qualquer um dos dois branchs, não esquecendo de manter sempre atualizado antes de mergeá-los.
 	- Depois do GIT PUSH --SET-UPSTREAM ORIGIN <NOME_BRANCH>, para dar push nas novas alterações, basta apenas usar o GIT PUSH estando no branch
 	- Quando estiver em um branch use o GIT PUSH --SET-UPSTREAM ORIGIN <NOME_BRANCH> apenas para empurrar as coisas para outro branch no projeto.
-	- Para o mesmo branch, use apenas GIT PUSH
+git 	- Para o mesmo branch, use apenas GIT PUSH
 
 8. ESTRATÉGIA DE CONTROLE DE VERSÃO
 
